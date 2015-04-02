@@ -1,0 +1,3 @@
+recursive-include synpla_datetimepicker/static *
+include README.rst
+
