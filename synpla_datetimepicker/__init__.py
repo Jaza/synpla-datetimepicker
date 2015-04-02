@@ -1,4 +1,4 @@
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 
 from flask import Blueprint
@@ -19,6 +19,7 @@ class SynplaDatetimepicker(object):
         blueprint = Blueprint(
             'datetimepicker',
             __name__,
+            template_folder='templates',
             static_folder='static',
             static_url_path=app.static_url_path + '/datetimepicker')
 
