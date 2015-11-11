@@ -13,8 +13,12 @@
         ? $(this).attr('data-widget-pos-vert')
         : 'auto';
 
+      var format = $(this).attr('data-format')
+        ? $(this).attr('data-format')
+        : 'YYYY-MM-DD HH:mm:ss';
+
       $(this).datetimepicker({
-        format: "YYYY-MM-DD HH:mm:ss",
+        format: format,
         widgetPositioning: {horizontal: widget_pos_horiz, vertical: widget_pos_vert}
       });
     });
